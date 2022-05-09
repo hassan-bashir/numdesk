@@ -1,0 +1,398 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block title %} About Us | NumDesk{% endblock %}
+{% block content %}
+
+<!-- Start .header-section -->
+<div id="home" class="header-section section header-software gradient-banner">	
+	<div id="particles-js" class="particles-container"></div>	
+	<div class="header-content pt-90">
+		<div class="container">
+			<div class="row text-center">
+				<div class="col-md-8 col-md-offset-2">
+					<div class="header-texts">
+						<h1 class="wow fadeInUp" data-wow-duration=".5s">About NumDesk</h1>
+						<p class="lead wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".3s">Sed ut perspiciatis unde omnis iste natus error sit volup tatem amet nascetur penat ibus sceleris accus antium dolore.</p>
+						<ul class="buttons">
+							<li><a href="{% url 'NumDesk:contact-us' %}" class="button solid-btn sb-h">Get In Touch</a></li>
+						</ul>
+					</div>
+				</div><!-- .col -->
+			</div><!-- .row -->
+		</div><!-- .container -->
+	</div><!-- .header-content -->
+</div><!-- .header-section -->
+
+<section class="about-shot-info section-sm pt-50">
+	<div class="container">
+		<div class="row">
+			<nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;); padding-bottom: 20px;" aria-label="breadcrumb">
+				<ol class="breadcrumb">
+				  <li class="breadcrumb-item"><a href="{% url 'NumDesk:home' %}">Home</a></li>
+				  <li class="breadcrumb-item active" aria-current="page">About Us</li>
+				</ol>
+			  </nav>
+			<div class="col-md-6 mt-20">
+				<h2>We Create Designs<br> and technology</h2>
+				<p>We comprise a team of seasoned and qualified professionals whose aim is to support organizations stay ahead by providing efficient, reliable, and cost-effective end-to-end business solutions and services. We maintain the art of engagement and divergent thinking.</p>
+				
+				
+			</div>
+			<div class="col-md-6 features-scrreen">
+				<img class="img-fluid" src="{% static 'images/hero_3.jpg' %}" alt="">
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+<section class="company-mission section-sm gradiant-background">
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<h3 style="color: white; font-size: 30px;">Our Mission</h3>
+				<p style="color: white;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere in suscipit voluptatum totam dolores assumenda vel, quia earum voluptatem blanditiis vero accusantium saepe aliquid nulla nemo accusamus, culpa inventore! Culpa nemo aspernatur tenetur, at quam aliquid reprehenderit obcaecati dicta illum mollitia, perferendis hic, beatae voluptates? Ex labore, obcaecati harum nam.</p>
+				<img src="{% static 'images/hero_2.jpg' %}" alt="" style="border-radius: 10px;" class="img-fluid mt-30">
+			</div>
+			<div class="col-md-6">
+				<h3 style="color: white; font-size: 30px;">Our Vision</h3>
+				<p style="color: white;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere in suscipit voluptatum totam dolores assumenda vel, quia earum voluptatem blanditiis vero accusantium saepe aliquid nulla nemo accusamus, culpa inventore! Culpa nemo aspernatur tenetur, at quam aliquid reprehenderit obcaecati dicta illum mollitia, perferendis hic, beatae voluptates? Ex labore, obcaecati harum nam.</p>
+				<img src="{% static 'images/hero_1.jpg' %}" alt="" style="border-radius: 10px;" class="img-fluid mt-30">
+			</div>
+		</div>
+	</div>
+</section>
+
+<section>
+	<!-- Start .team-section  -->
+<div class="team-section grey-background pb-90" id="team" style="padding-top: 0; padding-bottom: 100px;">
+	<div class="container">
+		<div class="section-head text-center">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2">
+					<h2 class="heading">Our <span>Team</span></h2>
+					<p>Nam et sagittis diam. Sed tempor augue sit amet egestas scelerisque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+				</div>
+			</div>
+		</div><!-- .section-head  -->
+		<div class="row">
+			<div class="col-md-3 col-sm-6">
+				<div class="team-member">
+					<div class="team-photo">
+						<img src="{% static 'images/teamthree.jpeg' %}" alt="team" />
+						<a href="#team-profile-1" class="expand-trigger content-popup"><span class="ti ti-plus"></span></a>
+					</div>
+					<div class="team-info">
+						<h4 class="name">Robert Miller</h4>
+						<p class="sub-title">UI/UX Designer</p>
+					</div>
+					<!-- Start .team-profile  -->
+					<div id="team-profile-1" class="team-profile mfp-hide">
+						<button title="Close (Esc)" type="button" class="mfp-close">×</button>
+						<div class="container-fluid">
+							<div class="row no-mg">
+								<div class="col-md-6">
+									<div class="team-profile-photo">
+										<img src="{% static 'images/teamthree.jpeg' %}" alt="team" />
+									</div>
+								</div><!-- .col  -->
+								<div class="col-md-6">
+									<div class="team-profile-info">
+										<h3 class="name">Robert Miller</h3>
+										<p class="sub-title">UI/UX Designer</p>
+										<ul class="social">
+											<li><a href="#"><em class="fa fa-facebook"></em></a></li>
+											<li><a href="#"><em class="fa fa-twitter"></em></a></li>
+											<li><a href="#"><em class="fa fa-google-plus"></em></a></li>
+											<li><a href="#"><em class="fa fa-instagram"></em></a></li>
+										</ul>
+										<p>He is a great man to work Lorem ipsum dolor sit amet, consec tetur adipis icing elit. Simi lique, autem. </p>
+										<p>Tenetur quos facere magnam volupt ates quas esse Sedrep ell endus mole stiae tates quas esse Sed repell endus molesti aela uda ntium quis quam iusto minima thanks.</p>
+										<div class="skill-bars">
+											<div class="single-skill-bar">
+												<div class="row no-mg">
+													<div class="col-xs-8 no-pd"><span class="skill-title">HTML5</span></div>
+													<div class="col-xs-4 text-right no-pd"><span class="skill-percent">85%</span></div>
+												</div>
+												<div class="skill-bar">
+													<div class="skill-bar-percent gradiant-background" style="width:85%"></div>
+												</div>
+											</div>
+											<div class="single-skill-bar">
+												<div class="row no-mg">
+													<div class="col-xs-8 no-pd"><span class="skill-title">CSS3</span></div>
+													<div class="col-xs-4 text-right no-pd"><span class="skill-percent">90%</span></div>
+												</div>
+												<div class="skill-bar">
+													<div class="skill-bar-percent gradiant-background" style="width:90%"></div>
+												</div>
+											</div>
+											<div class="single-skill-bar">
+												<div class="row no-mg">
+													<div class="col-xs-8 no-pd"><span class="skill-title">Java</span></div>
+													<div class="col-xs-4 text-right no-pd"><span class="skill-percent">75%</span></div>
+												</div>
+												<div class="skill-bar">
+													<div class="skill-bar-percent gradiant-background" style="width:75%"></div>
+												</div>
+											</div>
+											<div class="single-skill-bar">
+												<div class="row no-mg">
+													<div class="col-xs-8 no-pd"><span class="skill-title">Node.js</span></div>
+													<div class="col-xs-4 text-right no-pd"><span class="skill-percent">80%</span></div>
+												</div>
+												<div class="skill-bar">
+													<div class="skill-bar-percent gradiant-background" style="width:80%"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div><!-- .col  -->
+							</div><!-- .row  -->
+						</div><!-- .container  -->
+					</div><!-- .team-profile  -->
+				</div>
+			</div><!-- .col  -->
+			<div class="col-md-3 col-sm-6">
+				<div class="team-member">
+					<div class="team-photo">
+						<img src="{% static 'images/teamtwo.jpeg' %}" alt="team" />
+						<a href="#team-profile-2" class="expand-trigger content-popup"><span class="ti ti-plus"></span></a>
+					</div>
+					<div class="team-info">
+						<h4 class="name">Stephen Everett</h4>
+						<p class="sub-title">Fornt-End Developer</p>
+					</div>
+					<!-- Start .team-profile  -->
+					<div id="team-profile-2" class="team-profile mfp-hide">
+						<button title="Close (Esc)" type="button" class="mfp-close">×</button>
+						<div class="container-fluid">
+							<div class="row no-mg">
+								<div class="col-md-6">
+									<div class="team-profile-photo">
+										<img src="{% static 'images/teamtwo.jpeg' %}" alt="team" />
+									</div>
+								</div><!-- .col  -->
+								<div class="col-md-6">
+									<div class="team-profile-info">
+										<h3 class="name">Stephen Everett</h3>
+										<p class="sub-title">Fornt-End Developer</p>
+										<ul class="social">
+											<li><a href="#"><em class="fa fa-facebook"></em></a></li>
+											<li><a href="#"><em class="fa fa-twitter"></em></a></li>
+											<li><a href="#"><em class="fa fa-google-plus"></em></a></li>
+											<li><a href="#"><em class="fa fa-instagram"></em></a></li>
+										</ul>
+										<p>He is a great man to work Lorem ipsum dolor sit amet, consec tetur adipis icing elit. Simi lique, autem. </p>
+										<p>Tenetur quos facere magnam volupt ates quas esse Sedrep ell endus mole stiae tates quas esse Sed repell endus molesti aela uda ntium quis quam iusto minima thanks.</p>
+										<div class="skill-bars">
+											<div class="single-skill-bar">
+												<div class="row no-mg">
+													<div class="col-xs-8 no-pd"><span class="skill-title">HTML5</span></div>
+													<div class="col-xs-4 text-right no-pd"><span class="skill-percent">85%</span></div>
+												</div>
+												<div class="skill-bar">
+													<div class="skill-bar-percent gradiant-background" style="width:85%"></div>
+												</div>
+											</div>
+											<div class="single-skill-bar">
+												<div class="row no-mg">
+													<div class="col-xs-8 no-pd"><span class="skill-title">CSS3</span></div>
+													<div class="col-xs-4 text-right no-pd"><span class="skill-percent">90%</span></div>
+												</div>
+												<div class="skill-bar">
+													<div class="skill-bar-percent gradiant-background" style="width:90%"></div>
+												</div>
+											</div>
+											<div class="single-skill-bar">
+												<div class="row no-mg">
+													<div class="col-xs-8 no-pd"><span class="skill-title">Java</span></div>
+													<div class="col-xs-4 text-right no-pd"><span class="skill-percent">75%</span></div>
+												</div>
+												<div class="skill-bar">
+													<div class="skill-bar-percent gradiant-background" style="width:75%"></div>
+												</div>
+											</div>
+											<div class="single-skill-bar">
+												<div class="row no-mg">
+													<div class="col-xs-8 no-pd"><span class="skill-title">Node.js</span></div>
+													<div class="col-xs-4 text-right no-pd"><span class="skill-percent">80%</span></div>
+												</div>
+												<div class="skill-bar">
+													<div class="skill-bar-percent gradiant-background" style="width:80%"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div><!-- .col  -->
+							</div><!-- .row  -->
+						</div><!-- .container  -->
+					</div><!-- .team-profile  -->
+				</div>
+			</div><!-- .col  -->
+			<div class="col-md-3 col-sm-6">
+				<div class="team-member">
+					<div class="team-photo">
+						<img src="{% static 'images/teamthree.jpeg' %}" alt="team" />
+						<a href="#team-profile-3" class="expand-trigger content-popup"><span class="ti ti-plus"></span></a>
+					</div>
+					<div class="team-info">
+						<h4 class="name">Philip Hennessy</h4>
+						<p class="sub-title">FullStack Developer</p>
+					</div>
+					<!-- Start .team-profile  -->
+					<div id="team-profile-3" class="team-profile mfp-hide">
+						<button title="Close (Esc)" type="button" class="mfp-close">×</button>
+						<div class="container-fluid">
+							<div class="row no-mg">
+								<div class="col-md-6">
+									<div class="team-profile-photo">
+										<img src="{% static 'images/teamthree.jpeg' %}" alt="team" />
+									</div>
+								</div><!-- .col  -->
+								<div class="col-md-6">
+									<div class="team-profile-info">
+										<h3 class="name">Philip Hennessy</h3>
+										<p class="sub-title">FullStack Developer</p>
+										<ul class="social">
+											<li><a href="#"><em class="fa fa-facebook"></em></a></li>
+											<li><a href="#"><em class="fa fa-twitter"></em></a></li>
+											<li><a href="#"><em class="fa fa-google-plus"></em></a></li>
+											<li><a href="#"><em class="fa fa-instagram"></em></a></li>
+										</ul>
+										<p>He is a great man to work Lorem ipsum dolor sit amet, consec tetur adipis icing elit. Simi lique, autem. </p>
+										<p>Tenetur quos facere magnam volupt ates quas esse Sedrep ell endus mole stiae tates quas esse Sed repell endus molesti aela uda ntium quis quam iusto minima thanks.</p>
+										<div class="skill-bars">
+											<div class="single-skill-bar">
+												<div class="row no-mg">
+													<div class="col-xs-8 no-pd"><span class="skill-title">HTML5</span></div>
+													<div class="col-xs-4 text-right no-pd"><span class="skill-percent">85%</span></div>
+												</div>
+												<div class="skill-bar">
+													<div class="skill-bar-percent gradiant-background" style="width:85%"></div>
+												</div>
+											</div>
+											<div class="single-skill-bar">
+												<div class="row no-mg">
+													<div class="col-xs-8 no-pd"><span class="skill-title">CSS3</span></div>
+													<div class="col-xs-4 text-right no-pd"><span class="skill-percent">90%</span></div>
+												</div>
+												<div class="skill-bar">
+													<div class="skill-bar-percent gradiant-background" style="width:90%"></div>
+												</div>
+											</div>
+											<div class="single-skill-bar">
+												<div class="row no-mg">
+													<div class="col-xs-8 no-pd"><span class="skill-title">Java</span></div>
+													<div class="col-xs-4 text-right no-pd"><span class="skill-percent">75%</span></div>
+												</div>
+												<div class="skill-bar">
+													<div class="skill-bar-percent gradiant-background" style="width:75%"></div>
+												</div>
+											</div>
+											<div class="single-skill-bar">
+												<div class="row no-mg">
+													<div class="col-xs-8 no-pd"><span class="skill-title">Node.js</span></div>
+													<div class="col-xs-4 text-right no-pd"><span class="skill-percent">80%</span></div>
+												</div>
+												<div class="skill-bar">
+													<div class="skill-bar-percent gradiant-background" style="width:80%"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div><!-- .col  -->
+							</div><!-- .row  -->
+						</div><!-- .container  -->
+					</div><!-- .team-profile  -->
+				</div>
+			</div><!-- .col  -->
+			<div class="col-md-3 col-sm-6">
+				<div class="team-member">
+					<div class="team-photo">
+						<img src="{% static 'images/teamtwo.jpeg' %}" alt="team" />
+						<a href="#team-profile-4" class="expand-trigger content-popup"><span class="ti ti-plus"></span></a>
+					</div>
+					<div class="team-info">
+						<h4 class="name">Nicholas Miller</h4>
+						<p class="sub-title">Development Team Lead</p>
+					</div>
+					<!-- Start .team-profile  -->
+					<div id="team-profile-4" class="team-profile mfp-hide">
+						<button title="Close (Esc)" type="button" class="mfp-close">×</button>
+						<div class="container-fluid">
+							<div class="row no-mg">
+								<div class="col-md-6">
+									<div class="team-profile-photo">
+										<img src="{% static 'images/teamtwo.jpeg' %}" alt="team" />
+									</div>
+								</div><!-- .col  -->
+								<div class="col-md-6">
+									<div class="team-profile-info">
+										<h3 class="name">Nicholas Miller</h3>
+										<p class="sub-title">Development Team Lead</p>
+										<ul class="social">
+											<li><a href="#"><em class="fa fa-facebook"></em></a></li>
+											<li><a href="#"><em class="fa fa-twitter"></em></a></li>
+											<li><a href="#"><em class="fa fa-google-plus"></em></a></li>
+											<li><a href="#"><em class="fa fa-instagram"></em></a></li>
+										</ul>
+										<p>He is a great man to work Lorem ipsum dolor sit amet, consec tetur adipis icing elit. Simi lique, autem. </p>
+										<p>Tenetur quos facere magnam volupt ates quas esse Sedrep ell endus mole stiae tates quas esse Sed repell endus molesti aela uda ntium quis quam iusto minima thanks.</p>
+										<div class="skill-bars">
+											<div class="single-skill-bar">
+												<div class="row no-mg">
+													<div class="col-xs-8 no-pd"><span class="skill-title">HTML5</span></div>
+													<div class="col-xs-4 text-right no-pd"><span class="skill-percent">85%</span></div>
+												</div>
+												<div class="skill-bar">
+													<div class="skill-bar-percent gradiant-background" style="width:85%"></div>
+												</div>
+											</div>
+											<div class="single-skill-bar">
+												<div class="row no-mg">
+													<div class="col-xs-8 no-pd"><span class="skill-title">CSS3</span></div>
+													<div class="col-xs-4 text-right no-pd"><span class="skill-percent">90%</span></div>
+												</div>
+												<div class="skill-bar">
+													<div class="skill-bar-percent gradiant-background" style="width:90%"></div>
+												</div>
+											</div>
+											<div class="single-skill-bar">
+												<div class="row no-mg">
+													<div class="col-xs-8 no-pd"><span class="skill-title">Java</span></div>
+													<div class="col-xs-4 text-right no-pd"><span class="skill-percent">75%</span></div>
+												</div>
+												<div class="skill-bar">
+													<div class="skill-bar-percent gradiant-background" style="width:75%"></div>
+												</div>
+											</div>
+											<div class="single-skill-bar">
+												<div class="row no-mg">
+													<div class="col-xs-8 no-pd"><span class="skill-title">Node.js</span></div>
+													<div class="col-xs-4 text-right no-pd"><span class="skill-percent">80%</span></div>
+												</div>
+												<div class="skill-bar">
+													<div class="skill-bar-percent gradiant-background" style="width:80%"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div><!-- .col  -->
+							</div><!-- .row  -->
+						</div><!-- .container  -->
+					</div><!-- .team-profile  -->
+				</div>
+			</div><!-- .col  -->
+		</div><!-- .row  -->
+	</div><!-- .container  -->
+</div><!-- .team-section  -->
+</section>
+
+  <!-- end section -->
+  {% endblock %}
+
+
+ 

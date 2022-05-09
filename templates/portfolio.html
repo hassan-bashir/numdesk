@@ -1,0 +1,160 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block title %} PortFolio | NumDesk{% endblock %}
+{% block content %}
+
+
+    <!-- Start .header-section -->
+    <div id="home" class="header-section section header-software gradient-banner" style="height: calc(65vh);">
+        <div id="particles-js" class="particles-container"></div>
+        <div class="header-content pt-90">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="header-texts">
+                            <h1 class="wow fadeInUp" data-wow-duration=".5s">PORTFOLIO</h1>
+
+                        </div>
+                    </div><!-- .col -->
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </div><!-- .header-content -->
+    </div><!-- .header-section -->
+
+    <div class="container">
+        <section class="portfolio" id="portfolio">
+            <div class="container-fluid">
+                <div class="row ">
+                    <div class="col-lg-12">
+                        <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;); padding-top: 20px;"
+                            aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="{% url 'NumDesk:home' %}">Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">PortFolio</li>
+                            </ol>
+                        </nav>
+
+                        <!-- section title -->
+                        <div class="title text-center">
+                            <h2>Our Works</h2>
+                            <div class="border"></div>
+                        </div>
+
+                        <div class="container">
+                            <div class="row">
+                                <!-- /section title -->
+                                <!-- single blog post -->
+                                <article class="col-md-4 col-sm-6 col-xs-12 clearfix ">
+                                    <div class="post-item">
+                                        <div class="media-wrapper features-scrreen">
+                                            <img src="{% static 'images/post-1.jpg' %}" alt="amazing caves coverimage"
+                                                class="img-fluid">
+                                        </div>
+
+                                        <div class="content">
+                                            <h3>Reasons to Smile</h3>
+                                            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                                                terry richardson ad squid. 3 wolf
+                                                moon officia aute, non skateboard dolor brunch.</p>
+                                        </div>
+                                    </div>
+                                </article>
+                                <!-- /single blog post -->
+
+                                <!-- single blog post -->
+                                <article class="col-md-4 col-sm-6 col-xs-12 ">
+                                    <div class="post-item">
+                                        <div class="media-wrapper features-scrreen">
+                                            <img src="{% static 'images/post-2.jpg' %}" alt="amazing caves coverimage"
+                                                class="img-fluid">
+                                        </div>
+
+                                        <div class="content">
+                                            <h3>A Few Moments</h3>
+                                            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                                                terry richardson ad squid. 3 wolf
+                                                moon officia aute, non skateboard dolor brunch.</p>
+                                        </div>
+                                    </div>
+                                </article>
+                                <!-- end single blog post -->
+
+                                <!-- single blog post -->
+                                <article class="col-md-4 col-sm-6 col-xs-12 ">
+                                    <div class="post-item">
+                                        <div class="media-wrapper features-scrreen">
+                                            <img src="{% static 'images/post-3.jpg' %}" alt="amazing caves coverimage"
+                                                class="img-fluid">
+                                        </div>
+
+                                        <div class="content">
+                                            <h3>Hints for Life</h3>
+                                            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                                                terry richardson ad squid. 3 wolf
+                                                moon officia aute, non skateboard dolor brunch.</p>
+                                        </div>
+                                    </div>
+                                </article>
+                                <!-- /section title -->
+                                <!-- single blog post -->
+                                <article class="col-md-4 col-sm-6 col-xs-12 clearfix ">
+                                    <div class="post-item">
+                                        <div class="media-wrapper features-scrreen">
+                                            <img src="{% static 'images/post-4.jpg' %}" alt="amazing caves coverimage"
+                                                class="img-fluid">
+                                        </div>
+
+                                        <div class="content">
+                                            <h3>Looking Back</h3>
+                                            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                                                terry richardson ad squid. 3 wolf
+                                                moon officia aute, non skateboard dolor brunch.</p>
+                                        </div>
+                                    </div>
+                                </article>
+                                <!-- /single blog post -->
+
+                                <!-- single blog post -->
+                                <article class="col-md-4 col-sm-6 col-xs-12 ">
+                                    <div class="post-item">
+                                        <div class="media-wrapper features-scrreen">
+                                            <img src="{% static 'images/post-5.jpg' %}" alt="amazing caves coverimage"
+                                                class="img-fluid">
+                                        </div>
+
+                                        <div class="content">
+                                            <h3>Laugh and Cry</h3>
+                                            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                                                terry richardson ad squid. 3 wolf
+                                                moon officia aute, non skateboard dolor brunch.</p>
+                                        </div>
+                                    </div>
+                                </article>
+                                <!-- end single blog post -->
+
+                                <!-- single blog post -->
+                                <article class="col-md-4 col-sm-6 col-xs-12 ">
+                                    <div class="post-item">
+                                        <div class="media-wrapper features-scrreen">
+                                            <img src="{% static 'images/post-6.jpg' %}" alt="amazing caves coverimage"
+                                                class="img-fluid">
+                                        </div>
+
+                                        <div class="content">
+                                            <h3>Regret No More</h3>
+                                            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                                                terry richardson ad squid. 3 wolf
+                                                moon officia aute, non skateboard dolor brunch.</p>                                            
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+
+                    </div>
+                </div> <!-- /end col-lg-12 -->
+            </div> <!-- end row -->
+        </section>
+    </div> <!-- end container -->
+
+    {% endblock %}

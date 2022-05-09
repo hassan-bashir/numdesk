@@ -1,0 +1,134 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block title %} Contact Us | NumDesk{% endblock %}
+{% block content %}
+
+	<!-- Start .header-section -->
+	<div id="home" class="header-section section header-software gradient-banner" style="height: calc(65vh);">
+		<div id="particles-js" class="particles-container"></div>
+		<div class="header-content pt-90">
+			<div class="container">
+				<div class="row text-center">
+					<div class="col-md-8 col-md-offset-2">
+						<div class="header-texts">
+							<h1 class="wow fadeInUp" data-wow-duration=".5s">Contact Us</h1>
+						</div>
+					</div><!-- .col -->
+				</div><!-- .row -->
+			</div><!-- .container -->
+		</div><!-- .header-content -->
+	</div><!-- .header-section -->
+
+	<!--Start Contact Us
+	=========================================== -->
+	<section class="contact-us" id="contact">
+		{% for message in messages %}
+            {% if message.tags == 'success' %}
+                <div class="alert alert-primary text-center mt-3" role="alert">{{ message }}
+                    <a href="{% url 'NumDesk:home' %}"></a>
+                </div>
+            {% endif %}
+        {% endfor %}
+		<div class="container">
+			<nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;); padding-bottom: 20px;" aria-label="breadcrumb">
+				<ol class="breadcrumb">
+				  <li class="breadcrumb-item"><a href="{% url 'NumDesk:home' %}">Home</a></li>
+				  <li class="breadcrumb-item active" aria-current="page">Contact Us</li>
+				</ol>
+			  </nav>
+			<div class="row">
+
+				<!-- section title -->
+				<div class="col-12">
+					<div class="title text-center">
+						<h2>Get In Touch</h2>
+						<div class="border"></div>
+					</div>
+				</div>
+				<!-- /section title -->
+
+				<!-- Contact Details -->
+				<div class="contact-details col-md-6 ">
+					<h3>Contact Details</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, vero, provident, eum eligendi
+						blanditiis ex explicabo vitae nostrum facilis asperiores dolorem illo officiis ratione vel
+						fugiat dicta laboriosam labore adipisci.</p>
+					<ul class="contact-short-info">
+						<li>
+							<p><em class="fa fa-map-marker"></em>&nbsp;&nbsp;&nbsp;&nbsp;<span
+									style="font-size: 14px;">102-B Raiwind Rd, Block B Nawab Town, Lahore,
+									Punjab 53700.</span>
+							</p>
+						</li>
+						<li>
+							<p><em class="fa fa-envelope"></em>&nbsp;&nbsp;&nbsp;&nbsp;<a
+									href="mailto:info@numdesk.com">info@numdesk.com</a></p>
+
+						</li>
+						<li>
+							<p><em class="fa fa-phone"></em>&nbsp;&nbsp;&nbsp;&nbsp;<a href="tel:++923234035523">+92 323
+									4035523</a></p>
+						</li>
+
+					</ul>
+					<hr>
+					<!-- Footer Social Links -->
+					<div class="social-icon">
+						<ul>
+							<li><a href="#"><i class="fab fa-facebook"></i></a></li>
+							<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+							<li><a href="#"><i class="fab fa-dribbble"></i></a></li>
+							<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+						</ul>
+					</div>
+					<!--/. End Footer Social Links -->
+				</div>
+				<!-- / End Contact Details -->
+
+				<!-- Contact Form -->
+				<div class="contact-form col-md-6 ">
+					<form action="/contactus" method="POST" role="form">
+						{% csrf_token %}
+						<div class="form-group">
+							<input type="text" placeholder="Your Name" class="form-control" name="name" id="name" required>
+						</div>
+
+						<div class="form-group">
+							<input type="email" placeholder="Your Email" class="form-control" name="email" id="email" required>
+						</div>
+
+						<div class="form-group">
+							<input type="text" placeholder="Subject" class="form-control" name="subject" id="subject" required>
+						</div>
+
+						<div class="form-group">
+							<textarea rows="6" placeholder="Message" class="form-control" name="message"
+								id="message" required></textarea>
+						</div>
+						<div id="cf-submit">
+							<input type="submit" id="contact-submit" class="btn btn-transparent" value="Submit">
+						</div>
+
+					</form>
+					
+				</div>
+				<!-- ./End Contact Form -->
+
+			</div> <!-- end row -->
+		</div> <!-- end container -->
+	</section> <!-- end section -->
+
+	<div class="container">
+		<section class="map">
+			<!-- Google Map -->
+			<div id="map_canvas" style="position: relative; overflow: hidden;">
+				<div
+					style="width: 100%; position: absolute; top: 0px; left: 0px; background-color: rgb(202, 198, 198);">
+					<div id="gMap" class="google-map"></div>
+					
+				</div>
+			</div>
+		</section>
+	</div>
+
+	{% endblock %}

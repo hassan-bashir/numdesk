@@ -1,0 +1,17 @@
+NAME :
+<br> {{ name }}
+
+<br><br>
+
+EMAIL :
+<br> {{ email }}
+
+<br><br>
+
+SUBJECT :
+<br> {{ subject }}
+
+<br><br>
+
+MESSAGE :
+<br> {{ message }}

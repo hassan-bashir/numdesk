@@ -1,0 +1,179 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block title %} Careers | NumDesk {% endblock %}
+{% block content %}
+
+    <!-- Start .header-section -->
+    <div id="home" class="header-section section header-software gradient-banner" style="height: calc(65vh);">
+        <div id="particles-js" class="particles-container"></div>
+        <div class="header-content pt-90">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="header-texts">
+                            <h1 class="wow fadeInUp" data-wow-duration=".5s">CAREERS</h1>
+
+                        </div>
+                    </div><!-- .col -->
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </div><!-- .header-content -->
+    </div><!-- .header-section -->
+
+
+
+    <div class="container pt-50">
+        <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;); padding-bottom: 20px;" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="{% url 'NumDesk:home' %}">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Careers</li>
+            </ol>
+          </nav>
+    </div>
+
+    <section class="page-title pb-50">
+        {% for message in messages %}
+            {% if message.tags == 'success' %}
+                <div class="alert alert-primary text-center mt-3" role="alert">{{ message }}
+                    <a href="{% url 'NumDesk:home' %}"></a>
+                </div>
+            {% endif %}
+        {% endfor %}
+        <div class="container">
+            
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- Page Title -->
+                    <h1>Career</h1>
+                    <div class="border"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--====  End of Page Title  ====-->
+    
+    
+    
+    <!--==================================
+    =            Career Promo            =
+    ===================================-->
+    <section class="career-featured pt-50">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="block">
+                        <!-- written-content -->
+                        <div class="content">
+                            <!-- Career heading -->
+                            <h2>Who we're looking for</h2>
+                            <!-- Career Description -->
+                            <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. eget tortor risus. Vivamus magna justo, lacinia eget consectetur sed,convallis at tellus. Vivamus suscipit tortor eget felis porttitor volutpat.Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Praesent sapien massa, convallis</p>
+                        </div>
+                        <!-- Promo Video -->
+                        <div class="video">
+                            <!-- Video Thumb -->
+                            <img class="img-fluid shadow" src="{% static 'images/promo-video-thumbnail.jpg' %}" alt="video-thumbnail">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--====  End of Career Promo  ====-->
+    
+     
+    <!--===============================
+    =            Fun Facts            =
+    ================================-->
+    <section class="company-fun-facts">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center pb-50 pt-50">
+                    <h2>Some amenities for you to enjoy</h2>
+                </div>
+            </div>
+            <div class="row">		
+                <div class="col-md-3">
+                    <div class="fun-fact">
+                        <!-- Icon -->
+                        <i class="fa fa-clock"></i>
+                        <h3>Flexible Hours</h3>
+                        <p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Donec rutrum congue leo eget malesuada.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="fun-fact">
+                        <!-- Icon -->
+                        <i class="fas fa-external-link-alt"></i>
+                        <h3>Remote Work</h3>
+                        <p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Donec rutrum congue leo eget malesuada.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="fun-fact">
+                        <!-- Icon -->
+                        <i class="fa fa-graduation-cap"></i>
+                        <h3>Learning & Resources</h3>
+                        <p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Donec rutrum congue leo eget malesuada.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="fun-fact">
+                        <!-- Icon -->
+                        <i class="fa fa-calendar-day"></i>
+                        <h3>4 Working Days</h3>
+                        <p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Donec rutrum congue leo eget malesuada.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--====  End of Fun Facts  ====-->
+    
+    <!--===============================
+    =            Apply Job            =
+    ================================-->
+    <section class="job-list pb-30 mt-50">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-12 mx-auto">
+                    <div class="block">
+                        <h3 class="text-center">Drop Your Resume Here</h3><hr>
+                        <form action="/send_mail" method="POST" enctype="multipart/form-data" autocomplete="off">
+                            {% csrf_token %}
+                          <div class="row">
+                            <!-- Name -->
+                            <div class="col-lg-6 col-md-12">
+                              <input class="form-control main" name="name" type="text" placeholder="Enter Full Name" required>
+                            </div>
+                            <!-- Email Address -->
+                            <div class="col-lg-6 col-md-12">
+                              <input class="form-control main" name="email" type="email" placeholder="Enter Email Address" required>
+                            </div>
+                            <!-- Portfolio -->
+                            <div class="col-lg-6 col-md-12">
+                              <input class="form-control main" name="subject" type="text" placeholder="Enter Position as Subject" required>
+                            </div>
+                            <!-- Github -->
+                            <div class="col-lg-6 col-md-12">
+                              <input class="form-control" name="file" type="file" required>
+                            </div>
+                            <!-- About You -->
+                            <div class="col-md-12">
+                              <textarea class="form-control main" name="message" id="" rows="10" placeholder="Write Something About You"></textarea>
+                            </div>
+                            <!-- Submit Button -->
+                            <div class="col-12 text-center">
+                              <button class="btn btn-main-md">Apply Now</button>
+                            </div>
+                          </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+	{% endblock %}
